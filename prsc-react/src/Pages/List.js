@@ -2,6 +2,9 @@ import React from 'react';
 import { Form, Button, Container, Row, Col, Image } from 'react-bootstrap';
 import RichTextEditor from '../Components/MyEditor';
 import ReactQuill from 'react-quill';
+import { initializeApp, applicationDefault, cert } from 'firebase/app';
+import { doc, setDoc } from "firebase/firestore"; 
+import { db } from '../config.js'
 
 class List extends React.Component {
   constructor(props) {
@@ -49,17 +52,23 @@ class List extends React.Component {
     });
   }
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     console.log(event)
     event.preventDefault();
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
+      console.log('not valid form list')
       event.stopPropagation();
     } else {
       // Here you would typically send the data to your backend
       console.log('Product to add:', this.state.product);
       console.log('Images to upload:', this.state.images);
-      
+
+      this.state.product.description = this.state.richText
+      const res = await setDoc(doc(db, "products", this.state.product.sku), this.state.product, { merge: true })
+      console.log(res)
+
+
       // Reset form after successful submission
       this.setState({
         product: {
