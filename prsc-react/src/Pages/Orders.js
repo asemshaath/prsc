@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class Orders extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { };
+    this.state = {};
   }
 
   componentDidMount() {

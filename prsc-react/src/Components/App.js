@@ -1,7 +1,7 @@
 import '../App.css';
-import Counter from './Counter.js'
+// import Counter from './Counter.js'
 import Navbar from './MyNavbar.js';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from '../Pages/Dashboard.js';
 import List from '../Pages/List.js';

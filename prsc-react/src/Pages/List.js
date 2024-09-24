@@ -18,7 +18,8 @@ class List extends React.Component {
         category: '',
         sku: '',
         price: '',
-        description: ''
+        description: '',
+        hidden: false
       },
       richText:'',
       images: [],
@@ -78,7 +79,8 @@ class List extends React.Component {
           category: '',
           sku: '',
           price: '',
-          description: ''
+          description: '',
+          hidden: false
         },
         richText: '',
         images: [],

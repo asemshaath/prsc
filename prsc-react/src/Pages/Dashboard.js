@@ -21,10 +21,10 @@ class Dashboard extends React.Component {
     return (
 
         <>
-        <p>Dashboard</p>
-        <Counter ctId = '11' storageId='counter'/>
+          <p>Dashboard</p>
+          <Counter ctId = '11' storageId='counter'/>
 
-        <MyEditor/>
+          <MyEditor/>
 
         </>
     );
