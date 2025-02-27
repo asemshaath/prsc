@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12.185 94.07 801.671 208.391">
+  <g id="svg2" style="transform-origin: 227.316px 231.757px;" transform="matrix(3.602564, 0, 0, 3.784445, 162.385671, -34.805562)">
+    <desc>Source: openclipart.org/detail/209545</desc>
+    <g transform="matrix(1, 0, 0, 1, -4.330015, 149.484425)">
+      <rect x="208.749" y="67.621" width="130.794" height="30" rx="15" fill="#000080" style="transform-box: fill-box; transform-origin: 50% 50%;"/>
+      <rect x="123.166" y="67.621" width="114.637" height="30" rx="15" fill="#8B0000" style="transform-box: fill-box; transform-origin: 50% 50%;"/>
+      <text style="fill: rgb(255, 255, 255); font-family: &quot;Segoe UI Variable Display&quot;; font-size: 19.8px; font-weight: 200; line-height: 27.4809px; white-space: pre; transform-box: fill-box; transform-origin: 50% 50%;" x="134.887" y="88.969" transform="matrix(1, 0, 0, 1, -0.001426, -0.00404)">PRECISION</text>
+      <text style="fill: rgb(255, 255, 255); font-family: &quot;Segoe UI Variable Display&quot;; font-size: 19.8px; font-weight: 300; line-height: 28.3265px; white-space: pre; transform-box: fill-box; transform-origin: 50% 50%;" x="239.826" y="88.969" transform="matrix(1, 0, 0, 1, -0.001466, -0.004094)">SCIENTIFIC</text>
+    </g>
+  </g>
+</svg>
