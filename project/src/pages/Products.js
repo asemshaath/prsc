@@ -4,72 +4,72 @@ import { Link } from 'react-router-dom';
 const Products = () => {
   const products = [
     { 
-      name: 'Industrial Circuit Breaker', 
-      category: 'Power Distribution', 
-      code: 'PS-ICB-3200',
-      image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      description: 'Heavy-duty 3-phase circuit breaker with 200A capacity for industrial applications'
+      name: 'Air Compressor', 
+      category: 'Industrial Equipment', 
+      code: 'PS-AC-2000',
+      image: '/images/air-compressor.png',
+      description: 'A portable, heavy‐duty air compressor ideal for powering pneumatic tools on the jobsite.'
     },
     { 
-      name: 'Variable Frequency Drive', 
-      category: 'Motor Control', 
-      code: 'PS-VFD-750',
-      image: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      description: '75kW VFD with advanced harmonic filtering for precise motor speed control'
+      name: 'Safety Glasses', 
+      category: 'Personal Protective Equipment', 
+      code: 'PS-SG-500',
+      image: '/images/safety-glasses.png',
+      description: 'Industrial safety glasses designed to meet ANSI standards for eye protection in demanding work environments.'
     },
     { 
-      name: 'Industrial PLC Controller', 
-      category: 'Automation', 
-      code: 'PS-PLC-5000',
-      image: 'https://images.unsplash.com/photo-1581092160607-ee22731c2eaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      description: 'Programmable logic controller with 32 I/O points and Ethernet connectivity'
+      name: 'Work Gloves', 
+      category: 'Personal Protective Equipment', 
+      code: 'PS-WG-350',
+      image: '/images/gloves.png',
+      description: 'Durable, cut‐resistant gloves suitable for handling rough materials and equipment safely.'
     },
     { 
-      name: 'Power Monitoring Relay', 
-      category: 'Monitoring', 
-      code: 'PS-PMR-420',
-      image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      description: 'Three-phase power monitoring relay with LCD display and RS485 communication'
+      name: 'Random Orbital Sander', 
+      category: 'Power Tools', 
+      code: 'PS-ROS-750',
+      image: '/images/idk.png',
+      description: 'A power sander that provides efficient material removal with minimal surface damage, ideal for finishing applications.'
     },
     { 
-      name: 'Industrial Contactor', 
-      category: 'Switching', 
-      code: 'PS-IC-125A',
-      image: 'https://images.unsplash.com/photo-1581092918170-1df6d0cb7f40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      description: '125A 3-pole contactor with 230V AC coil for industrial motor control applications'
+      name: 'HVAC Filter', 
+      category: 'HVAC Supplies', 
+      code: 'PS-HF-100',
+      image: '/images/hvac.png',
+      description: 'An industrial-grade filter designed to improve air quality by trapping dust, allergens, and particulates in HVAC systems.'
     },
     { 
-      name: 'Control Panel Enclosure', 
-      category: 'Enclosures', 
-      code: 'PS-CPE-800',
-      image: 'https://images.unsplash.com/photo-1581092787075-b9ec84909558?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      description: 'IP66-rated steel enclosure for industrial control panels, 800x600x250mm'
+      name: 'Industrial Storage Rack', 
+      category: 'Storage Solutions', 
+      code: 'PS-ISR-800',
+      image: '/images/rack.png',
+      description: 'A robust storage solution for organizing tools, parts, or materials in workshops and warehouses.'
     },
   ];
 
   return (
     <div>
       <section className="hero-section relative" style={{
-        backgroundImage: 'url("https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80")'
+        backgroundImage: 'url("https://images.unsplash.com/photo-1581244277943-fe4a9c777189?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80")'
       }}>
         <div className="hero-overlay absolute inset-0 flex items-center">
           <div className="container mx-auto text-white text-center">
-            <h1 className="text-4xl md:text-5xl mb-3">Industrial Electrical Solutions</h1>
-            <p className="text-xl md:text-2xl">High-quality components for factory automation and power systems</p>
+            <h1 className="text-4xl md:text-5xl mb-3">Industrial Equipment & Safety</h1>
+            <p className="text-xl md:text-2xl">High-quality components for workplace safety and efficiency</p>
           </div>
         </div>
       </section>
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">
-          <h2 className="section-heading text-3xl">Factory Electrical Products</h2>
+          <h2 className="section-heading text-3xl">Industrial Products</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((product, index) => (
-              <div key={index} className="product-card bg-white rounded-lg shadow-md overflow-hidden h-full">
+              <div key={index} className="product-card bg-white rounded-lg shadow-md overflow-hidden">
                 <div className="relative overflow-hidden">
                   <img 
                     src={product.image}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-64 object-cover transform transition-transform duration-300 hover:scale-105"
                     alt={product.name}
                     loading="lazy"
                   />
@@ -77,18 +77,15 @@ const Products = () => {
                     {product.category}
                   </div>
                 </div>
-                <div className="p-6 flex flex-col h-full">
+                <div className="p-6">
                   <h5 className="text-xl font-semibold mb-2">{product.name}</h5>
                   <p className="text-gray-600 mb-4">{product.description}</p>
-                  <div className="mt-auto flex justify-between items-center">
-                    <span className="text-gray-700 font-medium">Part #: <span className="font-bold">{product.code}</span></span>
-                    <Link to="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300 flex items-center">
-                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      <span className="hidden md:inline">Inquire</span>
-                    </Link>
-                  </div>
+                  <Link 
+                    to="/contact" 
+                    className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 px-6 rounded-lg transition duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    Get Quote
+                  </Link>
                 </div>
               </div>
             ))}
